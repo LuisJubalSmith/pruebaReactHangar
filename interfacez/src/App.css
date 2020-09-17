@@ -1,0 +1,245 @@
+body {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+#header-principal {
+    background: #2c3e50;
+    color: #ffff;
+    display: flow-root;
+    padding: 20px;
+    /* display: flow-root se usa para que el elemento padre no pierda su contesto cuando se float los elementos hijos */
+}
+
+#header-principal .logo {
+    float: left;
+    /* Para float a la izquierda */
+}
+
+#header-principal .logo span {
+    font-size: 32px;
+}
+
+#header-principal nav {
+    float: right;
+    /* Para float a la derecha  */
+    padding: 10px;
+}
+
+#header-principal nav a {
+    color: #ffff;
+    font-size: 16px;
+    margin-right: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#header-principal nav a:last-child {
+    /* :last-child para modificar el ultimo elemento hijo, si quiero modificar otro despues de last-child se agrega el nro de posicion */
+    margin-right: 0px;
+}
+
+
+/* Estilos del banner */
+
+#banner {
+    background: #18bc9c;
+    color: #ffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#banner .foto {
+    background-image: url('./img/LogoMakr.png');
+    background-size: cover;
+    border-radius: 50%;
+    height: 250px;
+    margin: 0 auto 20px;
+    width: 250px;
+}
+
+#banner h1 {
+    font-size: 66px;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    font-size: 28px;
+}
+
+
+/* Estilos de la sección de portafolio */
+
+#portafolio {
+    padding-top: 40px;
+    text-align: center;
+}
+
+#portafolio h2 {
+    color: #2c3e50;
+    font-size: 76px;
+    margin-bottom: 40px;
+}
+
+#portafolio .img-container {
+    display: flow-root;
+    margin: 0 auto;
+    width: 62%;
+}
+
+#portafolio .imagen {
+    background-size: cover;
+    float: left;
+    width: 290px;
+    height: 200px;
+    margin: 25px;
+}
+
+#portafolio .img1 {
+    background-image: url('./img/cabin.png');
+}
+
+#portafolio .img2 {
+    background-image: url('./img/cake.png');
+}
+
+#portafolio .img3 {
+    background-image: url('./img/circus.png');
+}
+
+#portafolio .img4 {
+    background-image: url('./img/game.png');
+}
+
+#portafolio .img5 {
+    background-image: url('./img/safe.png');
+}
+
+#portafolio .img6 {
+    background-image: url('./img/submarine.png');
+}
+
+
+/* Estilos section ABOUT */
+
+#about {
+    background: #18bc9c;
+    color: #ffff;
+    padding: 40px 0;
+}
+
+#about h2 {
+    font-size: 76px;
+    text-align: center;
+}
+
+#about .info-about {
+    display: flow-root;
+}
+
+#about .info-about p {
+    float: left;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 5%;
+    width: 40%;
+}
+
+#about a {
+    background: none;
+    border: 2px solid #ffff;
+    color: #ffff;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 157px;
+}
+
+
+/* Estilos de la seccion de contact me */
+
+#contact {
+    padding: 40px 10%;
+}
+
+#contact h2 {
+    font-size: 76px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact form input,
+#contact form textarea {
+    color: #495057;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 26px;
+    margin-bottom: 50px;
+    outline: none;
+    height: 50px;
+    width: 40%;
+}
+
+#contact button {
+    background: #18bc9c;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-left: 216px;
+}
+
+.border-input {
+    border: none;
+    border-bottom: 3px solid #495057;
+}
+
+
+/* Estilos del footer */
+
+#footer-principal {
+    color: #fff;
+}
+
+#footer-principal .footer-arriba {
+    background: #2c3e50;
+    display: flow-root;
+    padding: 40px 10%;
+}
+
+#footer-principal .footer-arriba .info {
+    float: left;
+    margin-right: 12.5%;
+    width: 25%;
+    /* width: 33%; */
+}
+
+#footer-principal .footer-arriba .info:last-child {
+    margin-right: 0;
+}
+
+#footer_principal .footer-arriba h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+#footer_principal .footer-arriba p {
+    font-size: 20px;
+}
+
+#footer-principal .footer-abajo {
+    background: #1a252f;
+    padding: 40px 10%;
+    text-align: center;
+}
+
+#footer-principal .fab {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+#footer-principal .fab:hover {
+    color: #18bc9c;
+}
